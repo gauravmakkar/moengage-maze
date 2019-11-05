@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: logo-animation infinite 2s linear;
+  height: 80px;
+}
+
+.App-header {
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes logo-animation {
+  0% { height: 80px; }
+  50% { height: 100px; }
+  100% { height: 80px; }
+}
+
+.cell {
+  border: 1px solid black;
+  transition: all 0.5s ease;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 70%;
+}
+.cell.player{
+  animation: player-animation infinite 2s linear;
+}
+
+@keyframes player-animation {
+  0% { background-size: 100% 100% }
+  50% { background-size: 70% 70% }
+  100% { background-size: 100% 100%  }
+}
+
+.inputbox{
+  padding: 12px 20px;
+  margin: 8px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
